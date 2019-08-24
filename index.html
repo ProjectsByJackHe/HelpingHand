@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Helping Hand Login</title>
+    <link rel = "stylesheet"
+   type = "text/css"
+   href = "./LoginPage.css" />
+    </head>
+    <style>
+        body{
+            
+        }
+    </style>
+    <body>  
+        <script src = "./login.js"></script>
+        <br><br><br><br><br><br><br><br>
+        <textarea placeholder="username" id = "textBar"></textarea>
+        <textarea placeholder="password" id = "textBar"></textarea>
+        
+        <button id = "logInButton"><a href = "./helpingHandMainPage.html">Log in</a></button>
+        <button id = "logInButton" onclick = "login()">Create Account</button>
+     
+        
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDhMsBcaAksOvMUKm85IuOFqYWHgy5cuhc",
+    authDomain: "hackthe6ix-4ab0a.firebaseapp.com",
+    databaseURL: "https://hackthe6ix-4ab0a.firebaseio.com",
+    projectId: "hackthe6ix-4ab0a",
+    storageBucket: "",
+    messagingSenderId: "481485805668",
+    appId: "1:481485805668:web:ef2a73802205e995"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    </body>
+</html>
