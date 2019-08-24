@@ -1,0 +1,14 @@
+#textBar{
+    resize: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    height: 10%
+}
+
+#logInButton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
