@@ -1,13 +1,28 @@
 <html>
+<style>
 
-<body>
+
+body {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#grad{
+	background-color: lightblue;
+	background-image: linear-gradient(to bottom right, lightblue, blue);
+
+}
+</style>
+<body id = "grad">
 
 	<center><h1>Pending Service Requests</h1></center>
 
-	<p>In thie page, you can view your pending service requests, chat with service providers, and confirm/reject the services.</p>
+	<p>In this page, you can view your pending service requests, chat with service providers, and confirm/reject the services.</p>
 
 	<!--Read from File-->
 	<h3>Your Pending Services</h3>
+	<embed src="PendingServices.txt"></embed><br>
 
 
 	<a href="HelpingHandMainPage.html">Back To Home Page</a>
