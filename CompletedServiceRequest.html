@@ -1,11 +1,41 @@
 <html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
 <style>
 
+header h1 {
+	color: white;
+	margin-top: 15px;
+}
+
+h3, p {
+	color: white;
+}
 
 body {
+	margin: auto;
+	width: 80%;
     height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+body button {
+	margin-top: 20px;
+}
+
+a {
+	text-decoration-color: none;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+
 }
 
 #grad{
@@ -13,20 +43,25 @@ body {
 	background-image: linear-gradient(to bottom right, lightblue, blue);
 
 }
+h2{
+	color: white;
+}
 </style>
 
 <body id = "grad">
 
-	<center><h1>Accepted Service Requests</h1></center>
+	<header>
+	<h1>View Your Accepted Services</h1><br>
+	</header>
 
 	<p>In this page, you can view your accepted service requests. Once the service is complete, you can delete them from the list.</p>
 
 	<!--Read from File-->
-	<h3>Your Accepted Services</h3>
+
 	<embed src="AcceptedServices.txt"></embed><br>
 
 
-	<a href="HelpingHandMainPage.html">Back To Home Page</a>
+	<button><h4><a href="HelpingHandMainPage.html">Back To Home Page</a></h4></button>
 
 </body>
 
