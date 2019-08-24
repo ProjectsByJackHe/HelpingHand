@@ -8,7 +8,48 @@ window.addEventListener('load', () =>{
             latitude = position.coords.latitude;
             console.log(latitude, longitude)
             map = L.map('mapDiv').setView([latitude, longitude], 5);
-            marker = L.marker([latitude, longitude]).addTo(map);
+            
+            var marker = L.marker([latitude, longitude]).addTo(map);
+            marker.bindPopup("<h6>John Doe<br>Skills: Calculus <br>Tutor - $20/hr<br>Tel: 617 294 7592<br>Email: jdoe@gmail.com</h6>").openPopup();
+            
+            var marker2 = L.marker([latitude+0.001, longitude+0.001]).addTo(map);
+            marker2.bindPopup("<h6>John Smith<br>Skills: Garden Engineer - $50/hr<br>Tel: 465 897 1209<br>Email: jsmith@gardenhoe.com</h6>").openPopup();
+
+            var marker3 = L.marker([latitude-0.001, longitude-0.02]).addTo(map);
+            marker3.bindPopup("<h6>Nick Fury<br>Skills: Plumber - $22/hr<br>Tel: 325 224 7894<br>Email: nfury@live.com</h6>").openPopup();
+
+            var marker4 = L.marker([latitude+0.0003, longitude+0.01]).addTo(map);
+            marker4.bindPopup("<h6>Bob Jones<br>Skills: Physics <br>Tutor - $18/hr<br>Tel: 894 238 9230<br>Email: bojo@yahoo.com</h6>").openPopup();
+
+            var marker5 = L.marker([latitude-0.007, longitude+0.0002]).addTo(map);
+            marker5.bindPopup("<h6>Kathy Tran<br>Skills: Chemistry <br>Tutor - $25/hr<br>Tel: 342 812 7538<br>Email: Katran@gmail.com</h6>").openPopup();
+
+            var marker6 = L.marker([latitude+0.001, longitude-0.01]).addTo(map);
+            marker6.bindPopup("<h6>Alex Nguyen<br>Skills: Linear Algebra <br>Tutor - $20/hr<br>Tel: 894 237 2389<br>Email: alexnguyen@hotmail.com</h6>").openPopup();
+
+            var marker7 = L.marker([latitude-0.005, longitude+0.0005]).addTo(map);
+            marker7.bindPopup("<h6>Old McDonald<br>Skills: Electrican - $40/hr<br>Tel: 216 395 9880<br>Email: omcdonald@gmail.com</h6>").openPopup();
+
+            var marker8 = L.marker([latitude+0.01, longitude-0.02]).addTo(map);
+            marker8.bindPopup("<h6>Kevin Matthew<br>Skills: Painter - $25/hr<br>Tel: 932 752 2918<br>Email: kevmatt@live.com</h6>").openPopup();
+
+            var marker9 = L.marker([latitude-0.01, longitude+0.01]).addTo(map);
+            marker9.bindPopup("<h6>Luke Matthew<br>Skills: Pool Cleaner - $18/hr<br>Tel: 912 834 7313<br>Email: lukem@yahoo.com</h6>").openPopup();
+
+            var marker10 = L.marker([latitude+0.005, longitude-0.005]).addTo(map);
+            marker10.bindPopup("<h6>GI Joe<br>Skills: Landscaper - $30/hr<br>Tel: 429 149 7538<br>Email: gijoe@outlook.com</h6>").openPopup();
+
+            var marker11 = L.marker([latitude-0.005, longitude-0.01]).addTo(map);
+            marker11.bindPopup("<h6>Herold Wong<br>Skills: Rooftop Maintainance - $35/hr<br>Tel: 842 901 9841<br>Email: hwong@gmail.com</h6>").openPopup();
+
+            var marker12 = L.marker([latitude-0.007, longitude-0.015]).addTo(map);
+            marker12.bindPopup("<h6>Tyler Zhang<br>Skills: Furtniture Installer - $15/hr<br>Tel: 941 851 9159<br>Email: tyzhang@outlook.com</h6>").openPopup();
+
+            
+
+
+
+
             initMap(latitude, longitude);
         })
     }
