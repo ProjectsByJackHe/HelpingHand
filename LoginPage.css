@@ -4,11 +4,13 @@
     margin-left: auto;
     margin-right: auto;
     width: 45%;
-    height: 10%
+    height: 15%;
 }
 
 #logInButton{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 20%;
+    height: 20%;
 }
