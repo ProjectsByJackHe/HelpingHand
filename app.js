@@ -1,6 +1,6 @@
 let longitude;
 let latitude;
-let JohnDoe = "<h6>John Doe<br>Skills: Calculus <br>Tutor - $20/hr<br>Tel: 617 294 7592<br>Email: jdoe@gmail.com</h6>"
+let JohnDoe = "<h6><img src = \"Assets/pic3.png\"></h6><h6>John Doe<br>Skills: Calculus <br>Tutor - $20/hr<br>Tel: 617 294 7592<br>Email: jdoe@gmail.com</h6>"
 let JohnSmith = "<h6>John Smith<br>Skills: Garden Engineer - $50/hr<br>Tel: 465 897 1209<br>Email: jsmith@gardenhoe.com</h6>"
 let NickFury = "<h6>Nick Fury<br>Skills: Plumber - $22/hr<br>Tel: 325 224 7894<br>Email: nfury@live.com</h6>"
 let BobJones = "<h6>Bob Jones<br>Skills: Physics <br>Tutor - $18/hr<br>Tel: 894 238 9230<br>Email: bojo@yahoo.com</h6>"
@@ -12,6 +12,8 @@ let LukeMatthew = "<h6>Luke Matthew<br>Skills: Pool Cleaner - $18/hr<br>Tel: 912
 let GiJoe = "<h6>GI Joe<br>Skills: Landscaper - $30/hr<br>Tel: 429 149 7538<br>Email: gijoe@outlook.com</h6>"
 let HeroldWong = "<h6>Herold Wong<br>Skills: Rooftop Maintainance - $35/hr<br>Tel: 842 901 9841<br>Email: hwong@gmail.com</h6>"
 let TylerZhang = "<h6>Tyler Zhang<br>Skills: Furtniture Installer - $15/hr<br>Tel: 941 851 9159<br>Email: tyzhang@outlook.com</h6>"
+
+
 
 window.addEventListener('load', () =>{
     if(navigator.geolocation){

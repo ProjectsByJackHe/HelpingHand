@@ -58,13 +58,19 @@ h2{
         <header>
         <h1>Helping Hand</h1><br>
         </header>
-        <textarea placeholder="Username" id = "textBar"></textarea>
-        <textarea placeholder="Password" id = "textBar"></textarea>
+        <input placeholder="Username" type = "email" id = "textBar"/><br>
+        <input placeholder="Password" type = "password" id = "passwordBar" style = " resize: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 45%;
+            height: 15%;"/>
         
-        <button id = "logInButton"><a href = "./helpingHandMainPage.html">Log in</a></button>
-        <button id = "logInButton"><a href = "./CreateAccount.html">Create Account</a></button>
+        <a href = "./helpingHandMainPage.html"><button id = "logInButton">Log in</button></a>
+        <a href = "./CreateAccount.html"><button id = "logInButton" onclick = "login()">Create Account</button></a>
     
-
+<script src = "login.js"></script>
+        
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
 
