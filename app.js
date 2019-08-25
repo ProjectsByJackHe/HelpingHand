@@ -1,6 +1,6 @@
 let longitude;
 let latitude;
-let JohnDoe = "<h6><img src = \"Assets/BigD.jpg\" width = \"110px\" style = \"transform:rotate(90deg); float: right;\"></h6><h6>Darryl Wu<br>Skills: Nice guy <br>FREE<br>Tel: 617 294 7592<br>Email: darryl.wu301@gmail.com<br><br><a href=\"ViewPendingService.html\"><button onclick = \"sendEmail()\">Request Service</button></a></h6>"
+let JohnDoe = "<h6><img src = \"Assets/BigD.JPG\" width = \"110px\" style = \"transform:rotate(90deg); float: right;\"></h6><h6>Darryl Wu<br>Skills: Nice guy <br>FREE<br>Tel: 617 294 7592<br>Email: darryl.wu301@gmail.com<br><br><a href=\"ViewPendingService.html\"><button onclick = \"sendEmail()\">Request Service</button></a></h6>"
 let JohnSmith = "<h6><img src = \"Assets/pic4.png\"></h6><h6>John Smith<br>Skills: Garden Engineer - $50/hr<br>Tel: 465 897 1209<br>Email: jsmith@gardenhoe.com<br><br><a href=\"ViewPendingService.html\"><button>Request Service</button></a></h6>"
 let NickFury = "<h6><img src = \"Assets/pic6.png\"></h6><h6>Nick Fury<br>Skills: Plumber - $22/hr<br>Tel: 325 224 7894<br>Email: nfury@live.com<br><br><a href=\"ViewPendingService.html\"><button>Request Service</button></a></h6>"
 let BobJones = "<h6><img src = \"Assets/pic8.png\" height=\"90\" width=\"90\"></h6><h6>Bob Jones<br>Skills: Physics <br>Tutor - $18/hr<br>Tel: 894 238 9230<br>Email: bojo@yahoo.com<br><br><a href=\"ViewPendingService.html\"><button>Request Service</button></a></h6>"
