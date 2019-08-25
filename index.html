@@ -8,6 +8,11 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
 
 </head>
 <style>
@@ -66,30 +71,11 @@ h2{
             width: 45%;
             height: 15%;"/>
         
-        <a href = "./helpingHandMainPage.html"><button id = "logInButton" onclick = "login()">Log in</button></a>
+        <a><button id = "logInButton" onclick = "login()">Log in</button></a>
         <a href = "./CreateAccount.html"><button id = "logInButton">Create Account</button></a>
-    
-        
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDhMsBcaAksOvMUKm85IuOFqYWHgy5cuhc",
-    authDomain: "hackthe6ix-4ab0a.firebaseapp.com",
-    databaseURL: "https://hackthe6ix-4ab0a.firebaseio.com",
-    projectId: "hackthe6ix-4ab0a",
-    storageBucket: "",
-    messagingSenderId: "481485805668",
-    appId: "1:481485805668:web:ef2a73802205e995"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
 <script src = "login.js"></script>
     </body>
 </html>
