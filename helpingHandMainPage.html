@@ -11,8 +11,12 @@ header h1 {
 	margin-top: 15px;
 }
 
-h3, p {
+p {
 	color: white;
+}
+
+body a button h3{
+	color: black;
 }
 
 body {
@@ -38,6 +42,10 @@ a:hover {
 
 }
 
+.h3-you {
+	color: white;
+}
+
 #grad{
 	background-color: lightblue;
 	background-image: linear-gradient(to bottom right, lightblue, blue);
@@ -54,13 +62,13 @@ h2{
 	</header>
 	<p><font size= "5">At Helping Hand, we strive to satisfy your needs. Our database grants you access to hundreds of individual service providers in multiple fields in your area.</font></p>
 
-	<h3>You can...</h3>
+	<h3 class="h3-you">You can...</h3>
 
-	<button class = "btn btn-warning"><a href="./requestService.html"><h2>Request a Service</h2></a></button><br>
-	<button><h3><a href="./ViewPendingService.html">View Your Pending Service Requests</a></h3></button><br>
-	<button><h3><a href="./CompletedServiceRequest.html">View your Accepted Service Requests</a></h3></button><br>
-	<button><h3><a href="./PersonalPreference.html">Personal Preferences</a></h3></button><br>
-	<button><h3><a href="./index.html">Log Out</a></h3></button>
+	<a href="./requestService.html"><button class = "btn btn-warning"><h2>Request a Service</h2></button><br></a>
+	<a href="./ViewPendingService.html"><button><h3>View Your Pending Service Requests</h3></button><br></a>
+	<a href="./CompletedServiceRequest.html"><button><h3>View your Accepted Service Requests</h3></button><br></a>
+	<a href="./PersonalPreference.html"><button><h3>Personal Preferences</h3></button><br></a>
+	<a href="./index.html"><button><h3>Log Out</h3></button></a>
 	
 
 
