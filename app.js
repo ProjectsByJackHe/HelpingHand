@@ -1,6 +1,6 @@
 let longitude;
 let latitude;
-let JohnDoe = "<h6><img src = \"Assets/pic3.png\"></h6><h6>John Doe<br>Skills: Calculus <br>Tutor - $20/hr<br>Tel: 617 294 7592<br>Email: jdoe@gmail.com<br><br><a href=\"ViewPendingService.html\"><button>Request Service</button></a></h6>"
+let JohnDoe = "<h6><img src = \"Assets/BigD.jpg\" width = \"110px\" style = \"transform:rotate(90deg); float: right;\"></h6><h6>Darryl Wu<br>Skills: Nice guy <br>FREE<br>Tel: 617 294 7592<br>Email: darryl.wu301@gmail.com<br><br><a href=\"ViewPendingService.html\"><button onclick = \"sendEmail()\">Request Service</button></a></h6>"
 let JohnSmith = "<h6><img src = \"Assets/pic4.png\"></h6><h6>John Smith<br>Skills: Garden Engineer - $50/hr<br>Tel: 465 897 1209<br>Email: jsmith@gardenhoe.com<br><br><a href=\"ViewPendingService.html\"><button>Request Service</button></a></h6>"
 let NickFury = "<h6><img src = \"Assets/pic6.png\"></h6><h6>Nick Fury<br>Skills: Plumber - $22/hr<br>Tel: 325 224 7894<br>Email: nfury@live.com<br><br><a href=\"ViewPendingService.html\"><button>Request Service</button></a></h6>"
 let BobJones = "<h6><img src = \"Assets/pic8.png\" height=\"90\" width=\"90\"></h6><h6>Bob Jones<br>Skills: Physics <br>Tutor - $18/hr<br>Tel: 894 238 9230<br>Email: bojo@yahoo.com<br><br><a href=\"ViewPendingService.html\"><button>Request Service</button></a></h6>"
@@ -13,7 +13,10 @@ let GiJoe = "<h6><img src = \"Assets/pic4.png\"></h6><h6>GI Joe<br>Skills: Lands
 let HeroldWong = "<h6><img src = \"Assets/pic6.png\"></h6><h6>Herold Wong<br>Skills: Rooftop Maintainance - $35/hr<br>Tel: 842 901 9841<br>Email: hwong@gmail.com<br><br><a href=\"ViewPendingService.html\"><button>Request Service</button></a></h6>"
 let TylerZhang = "<h6><img src = \"Assets/pic8.png\" height=\"90\" width=\"90\"></h6><h6>Tyler Zhang<br>Skills: Furtniture Installer - $15/hr<br>Tel: 941 851 9159<br>Email: tyzhang@outlook.com<br><br><a href=\"ViewPendingService.html\"><button>Request Service</button></a></h6>"
 
-
+function sendEmail(){
+    console.log("executed")
+    window.open("mailTo:darryl.wu301@gmail.com")
+}
 
 window.addEventListener('load', () =>{
     if(navigator.geolocation){
@@ -65,7 +68,7 @@ window.addEventListener('load', () =>{
 }) 
 
 function callPersonOne() {
-    var marker = L.marker([latitude, longitude]).addTo(map);
+    var marker = L.marker([latitude-0.002, longitude+0.002]).addTo(map);
     marker.bindPopup(JohnDoe).openPopup();
 }
 function callPersonTwo() {

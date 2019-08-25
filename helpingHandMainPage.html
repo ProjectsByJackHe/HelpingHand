@@ -2,7 +2,10 @@
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
 </head>
 <style>
 
@@ -68,7 +71,7 @@ h2{
 	<a href="./ViewPendingService.html"><button><h3>View Your Pending Service Requests</h3></button><br></a>
 	<a href="./CompletedServiceRequest.html"><button><h3>View Your Accepted Service Requests</h3></button><br></a>
 	<a href="./PersonalPreference.html"><button><h3>Personal Preferences</h3></button><br></a>
-	<button class = "btn btn-danger" onclick = "signOut()"><h3>Log Out</h3></button>
+	<a href = "index.html"><button class = "btn btn-danger" onclick = "signOut()"><h3>Log Out</h3></button></a>
 	<script src = "login.js"></script>
 
 
