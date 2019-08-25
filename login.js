@@ -14,7 +14,7 @@ function login(){
     //window.alert("yessir")
     let userEmail = document.getElementById("textBar").value 
     let userPassword = document.getElementById("passwordBar").value 
-    document.alert(userEmail)
+    window.alert(userEmail)
 firebase.auth().signInWithEmailAndPassword(userEmail, userPassword).catch(function(error) {
   // Handle Errors here.
   var errorCode = error.code;
