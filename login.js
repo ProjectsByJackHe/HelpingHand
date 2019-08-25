@@ -16,7 +16,8 @@
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
-    window.alert("You're signed in!") 
+   // window.alert("You're signed in!") 
+    window.location.href = "helpingHandMainPage.html"
   } else {
     // No user is signed in.
     window.alert("You're not signed in!")
@@ -34,5 +35,15 @@ firebase.auth().signInWithEmailAndPassword(userEmail, userPassword).catch(functi
   var errorMessage = error.message;
   // ...
 window.alert("error: " + " " + errorMessage)
+});
+}
+
+function signOut(){
+    firebase.auth().signOut().then(function() {
+  // Sign-out successful.
+    window.location.href = "index.html"
+}).catch(function(error) {
+  // An error happened.
+        window.alert("error occured while trying to sign out")
 });
 }
