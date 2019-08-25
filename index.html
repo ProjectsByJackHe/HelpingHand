@@ -66,14 +66,16 @@ h2{
             width: 45%;
             height: 15%;"/>
         
-        <a href = "./helpingHandMainPage.html"><button id = "logInButton">Log in</button></a>
-        <a href = "./CreateAccount.html"><button id = "logInButton" onclick = "login()">Create Account</button></a>
+        <a href = "./helpingHandMainPage.html"><button id = "logInButton" onclick = "login()">Log in</button></a>
+        <a href = "./CreateAccount.html"><button id = "logInButton">Create Account</button></a>
     
-<script src = "login.js"></script>
         
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>     <!-- Add Firebase products that you want to use -->
+  <script src="/__/firebase/6.4.1/firebase-auth.js"></script>
+  <script src="/__/firebase/6.4.1/firebase-firestore.js"></script>   
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
-
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -88,5 +90,7 @@ h2{
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
+<script src="/__/firebase/init.js"></script>
+<script src = "login.js"></script>
     </body>
 </html>
